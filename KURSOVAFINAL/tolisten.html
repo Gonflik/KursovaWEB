@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToListen – Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tolisten.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="burger.css" />
+</head>
+<body>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <header class="site-navbar">
+    <img src="images/navbar.png" alt="Navbar sketch background" class="navbar-bg">
+    <div class="navbar-content">
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" class="logo">
+        </a>
+        <span class="nav-site-name gradient-text">ratestuff.fm</span>
+        <nav class="nav-links">
+          <a href="explore.html" class="nav-link gradient-text">Explore</a>
+          <a href="index.html" class="nav-link">ToListen</a>
+          <a href="ratings.html" class="nav-link gradient-text">Ratings</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="nav-link">Log In</a>
+        <a href="#" class="nav-link">Sign Up</a>
+      </div>
+      <button class="burger-btn" id="burgerBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-content">
+
+    <div class="page-header">
+      <div class="page-header-bg"></div>
+      <h1 class="page-title">my listening list</h1>
+      <p class="page-subtitle">stuff I need to get around to eventually</p>
+    </div>
+
+    <div class="tolisten-grid">
+
+      <!-- card 1 -->
+      <div class="tl-item">
+        <article class="tl-card">
+          <div class="tl-card-bg"></div>
+          <div class="tl-check-wrap">
+            <div class="tl-checkbox"></div>
+          </div>
+          <div class="tl-cover-wrap">
+            <img src="images/in_rainbows.png" alt="In Rainbows" class="tl-cover">
+          </div>
+          <div class="tl-meta">
+            <h3 class="tl-title">In Rainbows</h3>
+            <p class="tl-artist">Radiohead</p>
+          </div>
+        </article>
+        <div class="sticky-note note-yellow">
+          <p>friend kept playing it in the car and I finally gave in</p>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="tl-item">
+        <article class="tl-card">
+          <div class="tl-card-bg"></div>
+          <div class="tl-check-wrap">
+            <div class="tl-checkbox"></div>
+          </div>
+          <div class="tl-cover-wrap">
+            <img src="images/brat.png" alt="Brat" class="tl-cover">
+          </div>
+          <div class="tl-meta">
+            <h3 class="tl-title">Brat</h3>
+            <p class="tl-artist">Charli XCX</p>
+          </div>
+        </article>
+        <div class="sticky-note note-green">
+          <p>everyone was talking about it all summer, time to finally listen</p>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+      <div class="tl-item">
+        <article class="tl-card">
+          <div class="tl-card-bg"></div>
+          <div class="tl-check-wrap">
+            <div class="tl-checkbox"></div>
+          </div>
+          <div class="tl-cover-wrap">
+            <img src="images/strokes.png" alt="The Strokes" class="tl-cover">
+          </div>
+          <div class="tl-meta">
+            <h3 class="tl-title">Comedown Machine</h3>
+            <p class="tl-artist">The Strokes</p>
+          </div>
+        </article>
+        <div class="sticky-note note-pink">
+          <p>heard it on a playlist at the café, had to find out the band</p>
+        </div>
+      </div>
+
+      <!-- card 4 -->
+      <div class="tl-item">
+        <article class="tl-card">
+          <div class="tl-card-bg"></div>
+          <div class="tl-check-wrap">
+            <div class="tl-checkbox"></div>
+          </div>
+          <div class="tl-cover-wrap">
+            <img src="images/hitotsubu.png" alt="Hitotsubu" class="tl-cover">
+          </div>
+          <div class="tl-meta">
+            <h3 class="tl-title">Hitotsubu no Umi</h3>
+            <p class="tl-artist">Toshifumi Hinata</p>
+          </div>
+        </article>
+        <div class="sticky-note note-blue">
+          <p>found it in a late-night YouTube rabbit hole, sounds dreamy</p>
+        </div>
+      </div>
+
+      <!-- card 5 -->
+      <div class="tl-item">
+        <article class="tl-card">
+          <div class="tl-card-bg"></div>
+          <div class="tl-check-wrap">
+            <div class="tl-checkbox"></div>
+          </div>
+          <div class="tl-cover-wrap">
+            <img src="images/kindofblue.png" alt="Kindofblue" class="tl-cover">
+          </div>
+          <div class="tl-meta">
+            <h3 class="tl-title">Kind of Blue</h3>
+            <p class="tl-artist">Miles Davis</p>
+          </div>
+        </article>
+        <div class="sticky-note note-yellow">
+          <p>dad said it's the best album ever made, need to verify that claim</p>
+        </div>
+      </div>
+
+      <!-- card 6 -->
+      <div class="tl-item">
+        <article class="tl-card">
+          <div class="tl-card-bg"></div>
+          <div class="tl-check-wrap">
+            <div class="tl-checkbox"></div>
+          </div>
+          <div class="tl-cover-wrap">
+            <img src="images/foremma.png" alt="ForEmma" class="tl-cover">
+          </div>
+          <div class="tl-meta">
+            <h3 class="tl-title">For Emma, Forever Ago</h3>
+            <p class="tl-artist">Bon Iver</p>
+          </div>
+        </article>
+        <div class="sticky-note note-green">
+          <p>read that he recorded it alone in a cabin, that's kinda wild</p>
+        </div>
+      </div>
+      
+      <!-- card 7 -->
+      <div class="tl-item">
+        <article class="tl-card">
+          <div class="tl-card-bg"></div>
+          <div class="tl-check-wrap">
+            <div class="tl-checkbox"></div>
+          </div>
+          <div class="tl-cover-wrap">
+            <img src="images/randomacess.png" alt="RAM" class="tl-cover">
+          </div>
+          <div class="tl-meta">
+            <h3 class="tl-title">Random Access Memories</h3>
+            <p class="tl-artist">Daft Punk</p>
+          </div>
+        </article>
+        <div class="sticky-note note-pink">
+          <p>Get Lucky came on shuffle and reminded me I've never heard the full album</p>
+        </div>
+      </div>
+
+      <!-- add button card -->
+      <div class="tl-item tl-add-item">
+        <button class="add-btn" aria-label="Add album to list">
+          <div class="add-btn-bg"></div>
+          <span class="add-icon">+</span>
+          <span class="add-label">add album</span>
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Add modal -->
+  <div class="modal-overlay" id="addModal">
+    <div class="modal-box">
+      <div class="modal-bg"></div>
+      <button class="modal-close" id="modalClose">✕</button>
+      <h2 class="modal-title">add to list</h2>
+
+      <label class="modal-label">album / artist</label>
+      <div class="modal-input-wrap">
+        <input type="text" id="modalAlbum" class="modal-input" placeholder="e.g. OK Computer – Radiohead" />
+      </div>
+
+      <label class="modal-label">artist (if separate)</label>
+      <div class="modal-input-wrap">
+        <input type="text" id="modalArtist" class="modal-input" placeholder="e.g. Radiohead" />
+      </div>
+
+      <label class="modal-label">why are you adding it?</label>
+      <div class="modal-input-wrap">
+        <textarea id="modalNote" class="modal-input modal-textarea" placeholder="friend recommended, heard it somewhere…"></textarea>
+      </div>
+
+      <button class="modal-save" id="modalSave">save it ✓</button>
+    </div>
+  </div>
+
+  <script>
+    // ── Modal open/close ──────────────────────────────
+    const addBtn  = document.querySelector('.add-btn');
+    const modal   = document.getElementById('addModal');
+    const close   = document.getElementById('modalClose');
+    const saveBtn = document.getElementById('modalSave');
+
+    addBtn.addEventListener('click', () => modal.classList.add('open'));
+    close.addEventListener('click',  () => modal.classList.remove('open'));
+    modal.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('open'); });
+
+    // ── Modal save → inject new card ─────────────────
+    saveBtn.addEventListener('click', () => {
+      const albumVal  = document.getElementById('modalAlbum').value.trim();
+      const artistVal = document.getElementById('modalArtist').value.trim();
+      const noteVal   = document.getElementById('modalNote').value.trim();
+
+      if (!albumVal) {
+        document.getElementById('modalAlbum').focus();
+        return;
+      }
+
+      const noteColors = ['note-yellow', 'note-green', 'note-pink', 'note-blue'];
+      const noteColor  = noteColors[Math.floor(Math.random() * noteColors.length)];
+      const noteText   = noteVal || 'added to the list ✓';
+
+      // Parse "Album – Artist" shorthand if artist field empty
+      let title  = albumVal;
+      let artist = artistVal;
+      if (!artist && albumVal.includes('–')) {
+        const parts = albumVal.split('–');
+        title  = parts[0].trim();
+        artist = parts[1].trim();
+      }
+      if (!artist) artist = '–';
+
+      const emojis = ['🎵', '🎶', '🎸', '🎹', '🎺', '🎻', '🥁', '🎤'];
+      const emoji  = emojis[Math.floor(Math.random() * emojis.length)];
+      const bgColors = ['#f0e0ff', '#e0f7e9', '#ffeedd', '#e8f0ff', '#fff0f0', '#fffbe0'];
+      const bg = bgColors[Math.floor(Math.random() * bgColors.length)];
+
+      const newItem = document.createElement('div');
+      newItem.className = 'tl-item';
+      newItem.innerHTML = `
+        <article class="tl-card">
+          <div class="tl-card-bg"></div>
+          <div class="tl-check-wrap">
+            <div class="tl-checkbox"></div>
+          </div>
+          <div class="tl-cover-wrap">
+            <div class="tl-cover-placeholder" style="background:${bg};">${emoji}</div>
+          </div>
+          <div class="tl-meta">
+            <h3 class="tl-title">${escHtml(title)}</h3>
+            <p class="tl-artist">${escHtml(artist)}</p>
+          </div>
+        </article>
+        <div class="sticky-note ${noteColor}">
+          <p>${escHtml(noteText)}</p>
+        </div>`;
+
+      // Wire up the new card's checkbox
+      wireCheckbox(newItem.querySelector('.tl-checkbox'));
+
+      // Insert before the add button
+      const addItem = document.querySelector('.tl-add-item');
+      addItem.parentNode.insertBefore(newItem, addItem);
+
+      // Reset + close
+      document.getElementById('modalAlbum').value  = '';
+      document.getElementById('modalArtist').value = '';
+      document.getElementById('modalNote').value   = '';
+      modal.classList.remove('open');
+    });
+
+    // ── Checkbox toggle ───────────────────────────────
+    function wireCheckbox(cb) {
+      cb.addEventListener('click', () => {
+        const card  = cb.closest('.tl-card');
+        const title = card.querySelector('.tl-title');
+        cb.classList.toggle('checked');
+        title.classList.toggle('tl-title-done');
+      });
+    }
+
+    document.querySelectorAll('.tl-checkbox').forEach(wireCheckbox);
+
+    // ── HTML escape helper ────────────────────────────
+    function escHtml(str) {
+      return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+  </script>
+
+    <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-bg"></div>
+      <div class="footer-content">
+
+        <div class="footer-logo-col">
+          <img src="images/logo.png" alt="Logo" class="footer-logo">
+          <p class="footer-tagline">rate shiiiiiit ♪</p>
+          <p class="footer-desc">a place to discover, track,<br>and rate the music you love.</p>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">Pages</p>
+          <nav class="footer-links">
+            <a href="explore.html" class="footer-link gradient-text">Explore</a>
+            <a href="tolisten.html" class="footer-link gradient-text">ToListen</a>
+            <a href="ratings.html" class="footer-link gradient-text">Ratings</a>
+          </nav>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">Account</p>
+          <div class="footer-auth">
+            <a href="#" class="footer-link">Log In</a>
+            <a href="#" class="footer-link">Sign Up</a>
+          </div>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">About</p>
+          <div class="footer-about-links">
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Privacy</a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom-row">
+        <p class="footer-credit">made with ♪ in 2025 · all rights reserved</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="footer-social-link" aria-label="Instagram">◈</a>
+          <a href="#" class="footer-social-link" aria-label="Spotify">♫</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-backdrop" id="navBackdrop"></div>
+    <div class="mobile-nav-panel">
+      <button class="mobile-nav-close" id="navClose">✕</button>
+      <p class="mobile-nav-label">Pages</p>
+      <div class="mobile-nav-links">
+        <a href="explore.html" class="mobile-nav-link gradient-text">Explore</a>
+        <a href="tolisten.html" class="mobile-nav-link gradient-text">ToListen</a>
+        <a href="ratings.html" class="mobile-nav-link gradient-text">Ratings</a>
+      </div>
+      <hr class="mobile-nav-divider">
+      <p class="mobile-nav-label">Account</p>
+      <div class="mobile-nav-auth">
+        <a href="#" class="mobile-nav-auth-link">Log In</a>
+        <a href="#" class="mobile-nav-auth-link">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var btn = document.getElementById('burgerBtn');
+      var nav = document.getElementById('mobileNav');
+      var backdrop = document.getElementById('navBackdrop');
+      var closeBtn = document.getElementById('navClose');
+      function openNav() { btn.classList.add('open'); nav.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      function closeNav() { btn.classList.remove('open'); nav.classList.remove('open'); document.body.style.overflow = ''; }
+      btn.addEventListener('click', function() { nav.classList.contains('open') ? closeNav() : openNav(); });
+      closeBtn.addEventListener('click', closeNav);
+      backdrop.addEventListener('click', closeNav);
+    })();
+  </script>
+</body>
+</html>

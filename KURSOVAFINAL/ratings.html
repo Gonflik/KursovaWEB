@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ratings – Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ratings.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="burger.css" />
+</head>
+<body>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <header class="site-navbar">
+    <img src="images/navbar.png" alt="Navbar sketch background" class="navbar-bg">
+    <div class="navbar-content">
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" class="logo">
+        </a>
+        <span class="nav-site-name gradient-text">ratestuff.fm</span>
+        <nav class="nav-links">
+          <a href="explore.html" class="nav-link gradient-text">Explore</a>
+          <a href="tolisten.html" class="nav-link gradient-text">ToListen</a>
+          <a href="index.html" class="nav-link">Ratings</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="nav-link">Log In</a>
+        <a href="#" class="nav-link">Sign Up</a>
+      </div>
+      <button class="burger-btn" id="burgerBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-content">
+
+    <div class="page-header">
+      <div class="page-header-bg"></div>
+      <h1 class="page-title">all ratings</h1>
+    </div>
+
+    <!-- sort controls -->
+    <div class="sort-row">
+      <span class="sort-label">sort by:</span>
+      <button class="sort-btn sort-active" data-sort="score">highest rated</button>
+      <button class="sort-btn" data-sort="count">most rated</button>
+      <button class="sort-btn" data-sort="newest">newest</button>
+      <button class="sort-btn" data-sort="title">A–Z</button>
+    </div>
+
+    <!-- ratings list -->
+    <section class="ratings-list" id="ratingsList">
+
+      <article class="rating-row" data-score="4.64" data-count="10324" data-year="2007" data-title="Jigsaw Falling Into Place">
+        <div class="row-bg"></div>
+        <span class="row-rank">#1</span>
+        <img src="images/in_rainbows.png" alt="In Rainbows" class="row-cover">
+        <div class="row-info">
+          <h3 class="row-song">Jigsaw Falling Into Place</h3>
+          <p class="row-artist">Radiohead</p>
+        </div>
+        <div class="row-rating-block">
+          <div class="row-star-box"></div>
+          <span class="row-star-icon">★</span>
+          <span class="row-score">4.64</span>
+        </div>
+        <span class="row-count">10 324 ratings</span>
+        <span class="row-length">4:05</span>
+        <div class="row-bar-wrap">
+          <div class="row-bar" style="width:92%"></div>
+        </div>
+      </article>
+
+      <article class="rating-row" data-score="4.61" data-count="8900" data-year="1959" data-title="So What">
+        <div class="row-bg"></div>
+        <span class="row-rank">#2</span>
+        <img src="images/kindofblue.png" alt="SO whaat" class="row-cover">
+        <div class="row-info">
+          <h3 class="row-song">So What</h3>
+          <p class="row-artist">Miles Davis</p>
+        </div>
+        <div class="row-rating-block">
+          <div class="row-star-box"></div>
+          <span class="row-star-icon">★</span>
+          <span class="row-score">4.61</span>
+        </div>
+        <span class="row-count">8 900 ratings</span>
+        <span class="row-length">9:22</span>
+        <div class="row-bar-wrap">
+          <div class="row-bar" style="width:88%"></div>
+        </div>
+      </article>
+
+      <article class="rating-row" data-score="4.58" data-count="7241" data-year="2007" data-title="Skinny Love">
+        <div class="row-bg"></div>
+        <span class="row-rank">#3</span>
+        <img src="images/foremma.png" alt="Skinni luv" class="row-cover">
+        <div class="row-info">
+          <h3 class="row-song">Skinny Love</h3>
+          <p class="row-artist">Bon Iver</p>
+        </div>
+        <div class="row-rating-block">
+          <div class="row-star-box"></div>
+          <span class="row-star-icon">★</span>
+          <span class="row-score">4.58</span>
+        </div>
+        <span class="row-count">7 241 ratings</span>
+        <span class="row-length">3:58</span>
+        <div class="row-bar-wrap">
+          <div class="row-bar" style="width:85%"></div>
+        </div>
+      </article>
+
+      <article class="rating-row" data-score="4.28" data-count="1032" data-year="1987" data-title="Reflections">
+        <div class="row-bg"></div>
+        <span class="row-rank">#4</span>
+        <img src="images/hitotsubu.png" alt="Reflections" class="row-cover">
+        <div class="row-info">
+          <h3 class="row-song">Reflections</h3>
+          <p class="row-artist">Toshifumi Hinata</p>
+        </div>
+        <div class="row-rating-block">
+          <div class="row-star-box"></div>
+          <span class="row-star-icon">★</span>
+          <span class="row-score">4.28</span>
+        </div>
+        <span class="row-count">1 032 ratings</span>
+        <span class="row-length">2:11</span>
+        <div class="row-bar-wrap">
+          <div class="row-bar" style="width:78%"></div>
+        </div>
+      </article>
+
+      <article class="rating-row" data-score="4.15" data-count="7113" data-year="2024" data-title="B2B">
+        <div class="row-bg"></div>
+        <span class="row-rank">#5</span>
+        <img src="images/brat.png" alt="B2B" class="row-cover">
+        <div class="row-info">
+          <h3 class="row-song">B2B</h3>
+          <p class="row-artist">Charli XCX</p>
+        </div>
+        <div class="row-rating-block">
+          <div class="row-star-box"></div>
+          <span class="row-star-icon">★</span>
+          <span class="row-score">4.15</span>
+        </div>
+        <span class="row-count">7 113 ratings</span>
+        <span class="row-length">2:59</span>
+        <div class="row-bar-wrap">
+          <div class="row-bar" style="width:74%"></div>
+        </div>
+      </article>
+
+      <article class="rating-row" data-score="4.10" data-count="14870" data-year="2013" data-title="Get Lucky">
+        <div class="row-bg"></div>
+        <span class="row-rank">#6</span>
+        <img src="images/randomacess.png" alt="Get lucki" class="row-cover">
+        <div class="row-info">
+          <h3 class="row-song">Get Lucky</h3>
+          <p class="row-artist">Daft Punk</p>
+        </div>
+        <div class="row-rating-block">
+          <div class="row-star-box"></div>
+          <span class="row-star-icon">★</span>
+          <span class="row-score">4.10</span>
+        </div>
+        <span class="row-count">14 870 ratings</span>
+        <span class="row-length">6:09</span>
+        <div class="row-bar-wrap">
+          <div class="row-bar" style="width:72%"></div>
+        </div>
+      </article>
+
+      <article class="rating-row" data-score="4.00" data-count="1228" data-year="2003" data-title="Tap Out">
+        <div class="row-bg"></div>
+        <span class="row-rank">#7</span>
+        <img src="images/strokes.png" alt="Tap Out" class="row-cover">
+        <div class="row-info">
+          <h3 class="row-song">Tap Out</h3>
+          <p class="row-artist">The Strokes</p>
+        </div>
+        <div class="row-rating-block">
+          <div class="row-star-box"></div>
+          <span class="row-star-icon">★</span>
+          <span class="row-score">4.00</span>
+        </div>
+        <span class="row-count">1 228 ratings</span>
+        <span class="row-length">3:43</span>
+        <div class="row-bar-wrap">
+          <div class="row-bar" style="width:68%"></div>
+        </div>
+      </article>
+
+      <article class="rating-row" data-score="3.98" data-count="3401" data-year="1998" data-title="La Femme d'Argent">
+        <div class="row-bg"></div>
+        <span class="row-rank">#8</span>
+        <img src="images/moonsafari.png" alt="La femme" class="row-cover">
+        <div class="row-info">
+          <h3 class="row-song">La Femme d'Argent</h3>
+          <p class="row-artist">Air</p>
+        </div>
+        <div class="row-rating-block">
+          <div class="row-star-box"></div>
+          <span class="row-star-icon">★</span>
+          <span class="row-score">3.98</span>
+        </div>
+        <span class="row-count">3 401 ratings</span>
+        <span class="row-length">7:11</span>
+        <div class="row-bar-wrap">
+          <div class="row-bar" style="width:64%"></div>
+        </div>
+      </article>
+
+      <article class="rating-row" data-score="3.92" data-count="5087" data-year="2001" data-title="Last Nite">
+        <div class="row-bg"></div>
+        <span class="row-rank">#9</span>
+        <img src="images/isthisit.png" alt="Last Nite" class="row-cover">
+        <div class="row-info">
+          <h3 class="row-song">Last Nite</h3>
+          <p class="row-artist">The Strokes</p>
+        </div>
+        <div class="row-rating-block">
+          <div class="row-star-box"></div>
+          <span class="row-star-icon">★</span>
+          <span class="row-score">3.92</span>
+        </div>
+        <span class="row-count">5 087 ratings</span>
+        <span class="row-length">3:13</span>
+        <div class="row-bar-wrap">
+          <div class="row-bar" style="width:60%"></div>
+        </div>
+      </article>
+
+      <article class="rating-row" data-score="3.87" data-count="2109" data-year="1959" data-title="Blue in Green">
+        <div class="row-bg"></div>
+        <span class="row-rank">#10</span>
+        <img src="images/kindofblue.png" alt="Bluegreen" class="row-cover">
+        <div class="row-info">
+          <h3 class="row-song">Blue in Green</h3>
+          <p class="row-artist">Miles Davis</p>
+        </div>
+        <div class="row-rating-block">
+          <div class="row-star-box"></div>
+          <span class="row-star-icon">★</span>
+          <span class="row-score">3.87</span>
+        </div>
+        <span class="row-count">2 109 ratings</span>
+        <span class="row-length">5:37</span>
+        <div class="row-bar-wrap">
+          <div class="row-bar" style="width:55%"></div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <script>
+    // ── Sort buttons ──────────────────────────────────
+    const list = document.getElementById('ratingsList');
+
+    const sorters = {
+      score:  (a, b) => parseFloat(b.dataset.score)  - parseFloat(a.dataset.score),
+      count:  (a, b) => parseInt(b.dataset.count)     - parseInt(a.dataset.count),
+      newest: (a, b) => parseInt(b.dataset.year)      - parseInt(a.dataset.year),
+      title:  (a, b) => a.dataset.title.localeCompare(b.dataset.title)
+    };
+
+    document.querySelectorAll('.sort-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('sort-active'));
+        btn.classList.add('sort-active');
+
+        const key  = btn.dataset.sort;
+        const rows = [...list.querySelectorAll('.rating-row')];
+        rows.sort(sorters[key]);
+        rows.forEach((row, i) => {
+          row.querySelector('.row-rank').textContent = '#' + (i + 1);
+          list.appendChild(row);
+        });
+      });
+    });
+  </script>
+
+    <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-bg"></div>
+      <div class="footer-content">
+
+        <div class="footer-logo-col">
+          <img src="images/logo.png" alt="Logo" class="footer-logo">
+          <p class="footer-tagline">rate shiiiiiit ♪</p>
+          <p class="footer-desc">a place to discover, track,<br>and rate the music you love.</p>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">Pages</p>
+          <nav class="footer-links">
+            <a href="explore.html" class="footer-link gradient-text">Explore</a>
+            <a href="tolisten.html" class="footer-link gradient-text">ToListen</a>
+            <a href="ratings.html" class="footer-link gradient-text">Ratings</a>
+          </nav>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">Account</p>
+          <div class="footer-auth">
+            <a href="#" class="footer-link">Log In</a>
+            <a href="#" class="footer-link">Sign Up</a>
+          </div>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">About</p>
+          <div class="footer-about-links">
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Privacy</a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom-row">
+        <p class="footer-credit">made with ♪ in 2025 · all rights reserved</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="footer-social-link" aria-label="Instagram">◈</a>
+          <a href="#" class="footer-social-link" aria-label="Spotify">♫</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-backdrop" id="navBackdrop"></div>
+    <div class="mobile-nav-panel">
+      <button class="mobile-nav-close" id="navClose">✕</button>
+      <p class="mobile-nav-label">Pages</p>
+      <div class="mobile-nav-links">
+        <a href="explore.html" class="mobile-nav-link gradient-text">Explore</a>
+        <a href="tolisten.html" class="mobile-nav-link gradient-text">ToListen</a>
+        <a href="ratings.html" class="mobile-nav-link gradient-text">Ratings</a>
+      </div>
+      <hr class="mobile-nav-divider">
+      <p class="mobile-nav-label">Account</p>
+      <div class="mobile-nav-auth">
+        <a href="#" class="mobile-nav-auth-link">Log In</a>
+        <a href="#" class="mobile-nav-auth-link">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var btn = document.getElementById('burgerBtn');
+      var nav = document.getElementById('mobileNav');
+      var backdrop = document.getElementById('navBackdrop');
+      var closeBtn = document.getElementById('navClose');
+      function openNav() { btn.classList.add('open'); nav.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      function closeNav() { btn.classList.remove('open'); nav.classList.remove('open'); document.body.style.overflow = ''; }
+      btn.addEventListener('click', function() { nav.classList.contains('open') ? closeNav() : openNav(); });
+      closeBtn.addEventListener('click', closeNav);
+      backdrop.addEventListener('click', closeNav);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore – Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="explore.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="burger.css" />
+</head>
+<body>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <header class="site-navbar">
+    <img src="images/navbar.png" alt="Navbar sketch background" class="navbar-bg">
+    <div class="navbar-content">
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" class="logo">
+        </a>
+        <span class="nav-site-name gradient-text">ratestuff.fm</span>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Explore</a>
+          <a href="tolisten.html" class="nav-link gradient-text">ToListen</a>
+          <a href="ratings.html" class="nav-link gradient-text">Ratings</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="nav-link">Log In</a>
+        <a href="#" class="nav-link">Sign Up</a>
+      </div>
+      <button class="burger-btn" id="burgerBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-content">
+
+    <!-- Search bar -->
+    <section class="search-section">
+      <div class="search-wrap">
+        <div class="search-box-bg"></div>
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="search artists, albums, genres…" />
+        <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      </div>
+      <p class="search-no-results" id="searchNoResults" style="display:none;">no results found — try something else</p>
+    </section>
+
+    <!-- Genre filters -->
+    <section class="genre-section">
+      <h2 class="section-label">browse by genre</h2>
+      <div class="genre-pills">
+        <button class="pill pill-active" data-genre="all">All</button>
+        <button class="pill" data-genre="indie">Indie</button>
+        <button class="pill" data-genre="electronic">Electronic</button>
+        <button class="pill" data-genre="jazz">Jazz</button>
+        <button class="pill" data-genre="classical">Classical</button>
+        <button class="pill" data-genre="hip-hop">Hip-Hop</button>
+        <button class="pill" data-genre="pop">Pop</button>
+        <button class="pill" data-genre="rock">Rock</button>
+        <button class="pill" data-genre="ambient">Ambient</button>
+      </div>
+    </section>
+
+    <!-- Featured artists -->
+    <section class="artists-section" id="artistsSection">
+      <div class="section-title-block">
+        <div class="section-title-bg"></div>
+        <h2 class="section-title gradient-gold">Featured Artists</h2>
+      </div>
+
+      <div class="artists-grid" id="artistsGrid">
+
+        <article class="artist-card" data-genre="rock indie" data-searchable="radiohead alternative art rock">
+          <div class="acard-bg"></div>
+          <div class="acard-inner">
+            <img class="artist-avatar" src="images/radioheadicon.png">
+            <h3 class="acard-name">Radiohead</h3>
+            <p class="acard-genre">Alternative / Art Rock</p>
+            <div class="acard-stats">
+              <span class="astat">★ 4.7</span>
+              <span class="astat">94k listeners</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artist-card" data-genre="pop electronic" data-searchable="charli xcx pop hyperpop">
+          <div class="acard-bg"></div>
+          <div class="acard-inner">
+            <img class="artist-avatar" src="images/charlicon.png">
+            <h3 class="acard-name">Charli XCX</h3>
+            <p class="acard-genre">Pop / Hyperpop</p>
+            <div class="acard-stats">
+              <span class="astat">★ 4.3</span>
+              <span class="astat">61k listeners</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artist-card" data-genre="indie rock" data-searchable="the strokes indie rock">
+          <div class="acard-bg"></div>
+          <div class="acard-inner">
+            <img class="artist-avatar" src="images/strokesicon.png">
+            <h3 class="acard-name">The Strokes</h3>
+            <p class="acard-genre">Indie Rock</p>
+            <div class="acard-stats">
+              <span class="astat">★ 4.5</span>
+              <span class="astat">78k listeners</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artist-card" data-genre="classical ambient" data-searchable="toshifumi hinata classical new age ambient">
+          <div class="acard-bg"></div>
+          <div class="acard-inner">
+            <img class="artist-avatar" src="images/toshifumiicon.png">
+            <h3 class="acard-name">Toshifumi Hinata</h3>
+            <p class="acard-genre">Classical / New Age</p>
+            <div class="acard-stats">
+              <span class="astat">★ 4.6</span>
+              <span class="astat">22k listeners</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artist-card" data-genre="jazz" data-searchable="miles davis jazz fusion kind of blue">
+          <div class="acard-bg"></div>
+          <div class="acard-inner">
+            <img class="artist-avatar" src="images/milesicon.png">
+            <h3 class="acard-name">Miles Davis</h3>
+            <p class="acard-genre">Jazz / Fusion</p>
+            <div class="acard-stats">
+              <span class="astat">★ 4.8</span>
+              <span class="astat">110k listeners</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artist-card" data-genre="indie" data-searchable="bon iver folk indie folk for emma">
+          <div class="acard-bg"></div>
+          <div class="acard-inner">
+            <img class="artist-avatar" src="images/bonivericon.png">
+            <h3 class="acard-name">Bon Iver</h3>
+            <p class="acard-genre">Folk / Indie Folk</p>
+            <div class="acard-stats">
+              <span class="astat">★ 4.6</span>
+              <span class="astat">55k listeners</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Trending albums -->
+    <section class="albums-section" id="albumsSection">
+      <div class="section-title-block">
+        <div class="section-title-bg"></div>
+        <h2 class="section-title gradient-orange">Trending Albums</h2>
+      </div>
+
+      <div class="albums-grid" id="albumsGrid">
+
+        <article class="album-card" data-genre="rock indie" data-searchable="in rainbows radiohead 2007 alternative">
+          <div class="album-card-bg"></div>
+          <div class="album-cover-wrap">
+            <img src="images/in_rainbows.png" alt="In Rainbows" class="album-thumb">
+          </div>
+          <div class="album-info">
+            <h3 class="album-title">In Rainbows</h3>
+            <p class="album-artist">Radiohead</p>
+            <p class="album-year">2007</p>
+            <div class="album-rating">
+              <span class="score-star">★</span>
+              <span class="album-score">4.64</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="album-card" data-genre="pop electronic" data-searchable="brat charli xcx 2024 hyperpop">
+          <div class="album-card-bg"></div>
+          <div class="album-cover-wrap">
+            <img src="images/brat.png" alt="Brat" class="album-thumb">
+          </div>
+          <div class="album-info">
+            <h3 class="album-title">Brat</h3>
+            <p class="album-artist">Charli XCX</p>
+            <p class="album-year">2024</p>
+            <div class="album-rating">
+              <span class="score-star">★</span>
+              <span class="album-score">4.15</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="album-card" data-genre="indie rock" data-searchable="is this it the strokes 2001 indie rock">
+          <div class="album-card-bg"></div>
+          <div class="album-cover-wrap">
+            <img src="images/strokes.png" alt="The Strokes" class="album-thumb">
+          </div>
+          <div class="album-info">
+            <h3 class="album-title">Is This It</h3>
+            <p class="album-artist">The Strokes</p>
+            <p class="album-year">2001</p>
+            <div class="album-rating">
+              <span class="score-star">★</span>
+              <span class="album-score">4.5</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="album-card" data-genre="classical ambient" data-searchable="hitotsubu no namida toshifumi hinata 1987 classical new age">
+          <div class="album-card-bg"></div>
+          <div class="album-cover-wrap">
+            <img src="images/hitotsubu.png" alt="Hitotsubu" class="album-thumb">
+          </div>
+          <div class="album-info">
+            <h3 class="album-title">Hitotsubu no Namida</h3>
+            <p class="album-artist">Toshifumi Hinata</p>
+            <p class="album-year">1987</p>
+            <div class="album-rating">
+              <span class="score-star">★</span>
+              <span class="album-score">4.28</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="album-card" data-genre="jazz" data-searchable="kind of blue miles davis 1959 jazz">
+          <div class="album-card-bg"></div>
+          <div class="album-cover-wrap">
+            <img src="images/kindofblue.png" alt="Kindofblue" class="album-thumb">
+          </div>
+          <div class="album-info">
+            <h3 class="album-title">Kind of Blue</h3>
+            <p class="album-artist">Miles Davis</p>
+            <p class="album-year">1959</p>
+            <div class="album-rating">
+              <span class="score-star">★</span>
+              <span class="album-score">4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="album-card" data-genre="indie" data-searchable="for emma forever ago bon iver 2007 folk indie">
+          <div class="album-card-bg"></div>
+          <div class="album-cover-wrap">
+            <img src="images/foremma.png" alt="ForEmma" class="album-thumb">
+          </div>
+          <div class="album-info">
+            <h3 class="album-title">For Emma, Forever Ago</h3>
+            <p class="album-artist">Bon Iver</p>
+            <p class="album-year">2007</p>
+            <div class="album-rating">
+              <span class="score-star">★</span>
+              <span class="album-score">4.7</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="album-card" data-genre="electronic pop" data-searchable="random access memories daft punk 2013 electronic">
+          <div class="album-card-bg"></div>
+          <div class="album-cover-wrap">
+            <img src="images/randomacess.png" alt="RAM" class="album-thumb">
+          </div>
+          <div class="album-info">
+            <h3 class="album-title">Random Access Memories</h3>
+            <p class="album-artist">Daft Punk</p>
+            <p class="album-year">2013</p>
+            <div class="album-rating">
+              <span class="score-star">★</span>
+              <span class="album-score">4.6</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="album-card" data-genre="electronic ambient" data-searchable="moon safari air 1998 electronic ambient">
+          <div class="album-card-bg"></div>
+          <div class="album-cover-wrap">
+            <img src="images/moonsafari.png" alt="Moon Safari" class="album-thumb">
+          </div>
+          <div class="album-info">
+            <h3 class="album-title">Moon Safari</h3>
+            <p class="album-artist">Air</p>
+            <p class="album-year">1998</p>
+            <div class="album-rating">
+              <span class="score-star">★</span>
+              <span class="album-score">4.4</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-bg"></div>
+      <div class="footer-content">
+
+        <div class="footer-logo-col">
+          <img src="images/logo.png" alt="Logo" class="footer-logo">
+          <p class="footer-tagline">rate shiiiiiit ♪</p>
+          <p class="footer-desc">a place to discover, track,<br>and rate the music you love.</p>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">Pages</p>
+          <nav class="footer-links">
+            <a href="explore.html" class="footer-link gradient-text">Explore</a>
+            <a href="tolisten.html" class="footer-link gradient-text">ToListen</a>
+            <a href="ratings.html" class="footer-link gradient-text">Ratings</a>
+          </nav>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">Account</p>
+          <div class="footer-auth">
+            <a href="#" class="footer-link">Log In</a>
+            <a href="#" class="footer-link">Sign Up</a>
+          </div>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">About</p>
+          <div class="footer-about-links">
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Privacy</a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom-row">
+        <p class="footer-credit">made with ♪ in 2025 · all rights reserved</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="footer-social-link" aria-label="Instagram">◈</a>
+          <a href="#" class="footer-social-link" aria-label="Spotify">♫</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── All filterable cards ──────────────────────────
+    const allCards = () => document.querySelectorAll('.artist-card, .album-card');
+
+    // ── Genre filter ──────────────────────────────────
+    let activeGenre = 'all';
+
+    document.querySelectorAll('.pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        document.querySelectorAll('.pill').forEach(p => p.classList.remove('pill-active'));
+        pill.classList.add('pill-active');
+        activeGenre = pill.dataset.genre;
+        applyFilters();
+      });
+    });
+
+    // ── Search filter ─────────────────────────────────
+    const searchInput  = document.getElementById('searchInput');
+    const searchClear  = document.getElementById('searchClear');
+    const noResults    = document.getElementById('searchNoResults');
+
+    searchInput.addEventListener('input', () => {
+      searchClear.style.display = searchInput.value ? 'flex' : 'none';
+      applyFilters();
+    });
+
+    searchClear.addEventListener('click', () => {
+      searchInput.value = '';
+      searchClear.style.display = 'none';
+      applyFilters();
+      searchInput.focus();
+    });
+
+    // ── Combined filter logic ─────────────────────────
+    function applyFilters() {
+      const query = searchInput.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      allCards().forEach(card => {
+        const genreMatch  = activeGenre === 'all' || card.dataset.genre.includes(activeGenre);
+        const searchMatch = !query || card.dataset.searchable.includes(query)
+          || (card.querySelector('.album-title,  .acard-name')?.textContent.toLowerCase().includes(query))
+          || (card.querySelector('.album-artist, .acard-genre')?.textContent.toLowerCase().includes(query));
+
+        const visible = genreMatch && searchMatch;
+        card.style.display = visible ? '' : 'none';
+        if (visible) visibleCount++;
+      });
+
+      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+
+      // Hide section headings when all cards in that section are gone
+      ['artistsSection', 'albumsSection'].forEach(id => {
+        const sec = document.getElementById(id);
+        const anyVisible = [...sec.querySelectorAll('.artist-card, .album-card')]
+          .some(c => c.style.display !== 'none');
+        sec.style.display = anyVisible ? '' : 'none';
+      });
+    }
+  </script>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-backdrop" id="navBackdrop"></div>
+    <div class="mobile-nav-panel">
+      <button class="mobile-nav-close" id="navClose">✕</button>
+      <p class="mobile-nav-label">Pages</p>
+      <div class="mobile-nav-links">
+        <a href="explore.html" class="mobile-nav-link gradient-text">Explore</a>
+        <a href="tolisten.html" class="mobile-nav-link gradient-text">ToListen</a>
+        <a href="ratings.html" class="mobile-nav-link gradient-text">Ratings</a>
+      </div>
+      <hr class="mobile-nav-divider">
+      <p class="mobile-nav-label">Account</p>
+      <div class="mobile-nav-auth">
+        <a href="#" class="mobile-nav-auth-link">Log In</a>
+        <a href="#" class="mobile-nav-auth-link">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var btn = document.getElementById('burgerBtn');
+      var nav = document.getElementById('mobileNav');
+      var backdrop = document.getElementById('navBackdrop');
+      var closeBtn = document.getElementById('navClose');
+      function openNav() { btn.classList.add('open'); nav.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      function closeNav() { btn.classList.remove('open'); nav.classList.remove('open'); document.body.style.overflow = ''; }
+      btn.addEventListener('click', function() { nav.classList.contains('open') ? closeNav() : openNav(); });
+      closeBtn.addEventListener('click', closeNav);
+      backdrop.addEventListener('click', closeNav);
+    })();
+  </script>
+</body>
+</html>

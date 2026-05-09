@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Landing Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="burger.css" />
+</head>
+<body>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <header class="site-navbar">
+    <img src="images/navbar.png" alt="Navbar sketch background" class="navbar-bg">
+    <div class="navbar-content">
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" class="logo">
+        </a>
+        <span class="nav-site-name gradient-text">ratestuff.fm</span>
+        <nav class="nav-links">
+          <a href="explore.html" class="nav-link gradient-text">Explore</a>
+          <a href="tolisten.html" class="nav-link gradient-text">ToListen</a>
+          <a href="ratings.html" class="nav-link gradient-text">Ratings</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="nav-link">Log In</a>
+        <a href="#" class="nav-link">Sign Up</a>
+      </div>
+      <button class="burger-btn" id="burgerBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="frame frame-1">
+      <div class="frame-inner">
+        <section class="hero">
+          <section class="hero-text-block">
+            <div class="text-highlight rect-4"></div>
+            <div class="text-highlight rect-5"></div>
+            <div class="text-highlight rect-6"></div>
+            <h1 class="hero-title">
+              Discover new music, keep track of what you want to listen, and rate shiiiiiit
+            </h1>
+          </section>
+          <section class="cta-block">
+            <img src="images/button.png" alt="Get Started button sketch background" class="cta-bg">
+            <a href="explore.html" class="cta-text">Get Started</a>
+          </section>
+          <section class="hero-image-block">
+            <img src="images/asd1232434353.png" alt="Person listening to music" class="hero-image">
+          </section>
+        </section>
+      </div>
+    </section>
+
+    <section class="frame frame-2">
+      <div class="frame-inner frame-2-inner">
+        <section class="top-rated-title-block">
+          <div class="title-bg"></div>
+          <h2 class="top-rated-title">TOP RATED</h2>
+        </section>
+
+        <section class="top-rated-grid tr-grid">
+
+          <div class="tr-item">
+            <article class="tr-card">
+              <div class="tr-card-bg"></div>
+              <div class="tr-cover-wrap">
+                <img src="images/in_rainbows.png" alt="In Rainbows" class="tr-cover">
+              </div>
+              <div class="tr-meta">
+                <h3 class="tr-title">Jigsaw Falling Into Place</h3>
+                <p class="tr-artist">Radiohead</p>
+              </div>
+              <div class="tr-rating-row">
+                  <span class="tr-score">★ 4.64</span>
+                  <span class="tr-count">10 324 ratings · 4:05</span>
+                </div>
+            </article>
+          </div>
+
+          <div class="tr-item">
+            <article class="tr-card">
+              <div class="tr-card-bg"></div>
+              <div class="tr-cover-wrap">
+                <img src="images/brat.png" alt="Brat" class="tr-cover">
+              </div>
+              <div class="tr-meta">
+                <h3 class="tr-title">B2B</h3>
+                <p class="tr-artist">Charli XCX</p>
+              </div>
+              <div class="tr-rating-row">
+                  <span class="tr-score">★ 4.15</span>
+                  <span class="tr-count">7 113 ratings · 2:59</span>
+                </div>
+            </article>
+          </div>
+
+          <div class="tr-item">
+            <article class="tr-card">
+              <div class="tr-card-bg"></div>
+              <div class="tr-cover-wrap">
+                <img src="images/strokes.png" alt="The Strokes" class="tr-cover">
+              </div>
+              <div class="tr-meta">
+                <h3 class="tr-title">Tap Out</h3>
+                <p class="tr-artist">The Strokes</p>
+              </div>
+              <div class="tr-rating-row">
+                  <span class="tr-score">★ 4.0</span>
+                  <span class="tr-count">1 228 ratings · 3:43</span>
+                </div>
+            </article>
+          </div>
+
+          <div class="tr-item">
+            <article class="tr-card">
+              <div class="tr-card-bg"></div>
+              <div class="tr-cover-wrap">
+                <img src="images/hitotsubu.png" alt="Hitotsubu" class="tr-cover">
+              </div>
+              <div class="tr-meta">
+                <h3 class="tr-title">Reflections</h3>
+                <p class="tr-artist">Toshifumi Hinata</p>
+              </div>
+              <div class="tr-rating-row">
+                  <span class="tr-score">★ 4.28</span>
+                  <span class="tr-count">1 032 ratings · 2:11</span>
+                </div>
+            </article>
+          </div>
+
+        </section>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-bg"></div>
+      <div class="footer-content">
+
+        <div class="footer-logo-col">
+          <img src="images/logo.png" alt="Logo" class="footer-logo">
+          <p class="footer-tagline">rate shiiiiiit ♪</p>
+          <p class="footer-desc">a place to discover, track,<br>and rate the music you love.</p>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">Pages</p>
+          <nav class="footer-links">
+            <a href="explore.html" class="footer-link gradient-text">Explore</a>
+            <a href="tolisten.html" class="footer-link gradient-text">ToListen</a>
+            <a href="ratings.html" class="footer-link gradient-text">Ratings</a>
+          </nav>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">Account</p>
+          <div class="footer-auth">
+            <a href="#" class="footer-link">Log In</a>
+            <a href="#" class="footer-link">Sign Up</a>
+          </div>
+        </div>
+
+        <div class="footer-nav-group">
+          <p class="footer-group-label">About</p>
+          <div class="footer-about-links">
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Privacy</a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom-row">
+        <p class="footer-credit">made with ♪ in 2025 · all rights reserved</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="footer-social-link" aria-label="Instagram">◈</a>
+          <a href="#" class="footer-social-link" aria-label="Spotify">♫</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-backdrop" id="navBackdrop"></div>
+    <div class="mobile-nav-panel">
+      <button class="mobile-nav-close" id="navClose">✕</button>
+      <p class="mobile-nav-label">Pages</p>
+      <div class="mobile-nav-links">
+        <a href="explore.html" class="mobile-nav-link gradient-text">Explore</a>
+        <a href="tolisten.html" class="mobile-nav-link gradient-text">ToListen</a>
+        <a href="ratings.html" class="mobile-nav-link gradient-text">Ratings</a>
+      </div>
+      <hr class="mobile-nav-divider">
+      <p class="mobile-nav-label">Account</p>
+      <div class="mobile-nav-auth">
+        <a href="#" class="mobile-nav-auth-link">Log In</a>
+        <a href="#" class="mobile-nav-auth-link">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var btn = document.getElementById('burgerBtn');
+      var nav = document.getElementById('mobileNav');
+      var backdrop = document.getElementById('navBackdrop');
+      var closeBtn = document.getElementById('navClose');
+      function openNav() { btn.classList.add('open'); nav.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      function closeNav() { btn.classList.remove('open'); nav.classList.remove('open'); document.body.style.overflow = ''; }
+      btn.addEventListener('click', function() { nav.classList.contains('open') ? closeNav() : openNav(); });
+      closeBtn.addEventListener('click', closeNav);
+      backdrop.addEventListener('click', closeNav);
+    })();
+  </script>
+</body>
+</html>
